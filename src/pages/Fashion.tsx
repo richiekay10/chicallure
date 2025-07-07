@@ -28,13 +28,13 @@ const Fashion = () => {
       name: "Evening Dresses", 
       price: "₵150 - ₵300", 
       description: "Elegant evening dresses for special occasions, designed to make you shine bright",
-      image: "https://images.unsplash.com/photo-1566479179817-c3dbb2b2c7a2?w=500&h=600&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=500&h=600&fit=crop&crop=center"
     },
     { 
-      name: "Casual Dresses", 
+      name: "Sexy Dresses", 
       price: "₵80 - ₵180", 
-      description: "Comfortable and stylish casual dresses for everyday wear, effortlessly chic",
-      image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=600&fit=crop&crop=center"
+      description: "Alluring and stylish dresses that make a statement, perfect for nights out",
+      image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop&crop=center"
     },
     { 
       name: "Trendy Tops", 
@@ -46,13 +46,13 @@ const Fashion = () => {
       name: "Designer Blouses", 
       price: "₵60 - ₵140", 
       description: "Professional and casual blouses for any occasion, crafted with attention to detail",
-      image: "https://images.unsplash.com/photo-1622120456108-b0c8c5ad0a2a?w=500&h=600&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1564557287817-3785e038698c?w=500&h=600&fit=crop&crop=center"
     },
     { 
       name: "Chic Crop Tops", 
       price: "₵40 - ₵90", 
       description: "Trendy crop tops for a modern, youthful look that's perfect for any season",
-      image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?w=500&h=600&fit=crop&crop=center"
     }
   ];
 

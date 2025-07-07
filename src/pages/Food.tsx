@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Moon, Sun, MessageCircle, Sparkles, Heart } from "lucide-react";
+import { Moon, Sun, MessageCircle, Sparkles, Heart, Soup } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
@@ -22,37 +22,43 @@ const Food = () => {
       name: "Okro Soup", 
       price: "₵100 - ₵300", 
       description: "Rich and nutritious okra soup with your choice of fresh meat or fish, cooked to perfection",
-      image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&h=400&fit=crop&crop=center"
+      icon: "🥣",
+      bgColor: "bg-gradient-to-br from-green-100 to-emerald-100 dark:from-green-900 dark:to-emerald-900"
     },
     { 
       name: "Egusi Soup", 
       price: "₵150 - ₵400", 
       description: "Traditional melon seed soup with fresh vegetables and premium protein, authentic Nigerian style",
-      image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&h=400&fit=crop&crop=center"
+      icon: "🍲",
+      bgColor: "bg-gradient-to-br from-yellow-100 to-orange-100 dark:from-yellow-900 dark:to-orange-900"
     },
     { 
       name: "Vegetable Soup", 
       price: "₵120 - ₵350", 
       description: "Fresh mixed vegetables in a flavorful broth with your choice of meat or fish",
-      image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=500&h=400&fit=crop&crop=center"
+      icon: "🥬",
+      bgColor: "bg-gradient-to-br from-lime-100 to-green-100 dark:from-lime-900 dark:to-green-900"
     },
     { 
       name: "Afang Soup", 
       price: "₵200 - ₵500", 
       description: "Delicious afang leaves soup with premium seafood and meat, a true delicacy",
-      image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500&h=400&fit=crop&crop=center"
+      icon: "🐟",
+      bgColor: "bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900 dark:to-cyan-900"
     },
     { 
       name: "Pepper Soup", 
       price: "₵100 - ₵300", 
       description: "Spicy and aromatic pepper soup with fresh fish or tender goat meat, perfect comfort food",
-      image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=500&h=400&fit=crop&crop=center"
+      icon: "🌶️",
+      bgColor: "bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900 dark:to-pink-900"
     },
     { 
       name: "Banga Soup", 
       price: "₵180 - ₵450", 
       description: "Traditional palm nut soup with assorted meat and fresh fish, cooked with authentic spices",
-      image: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=500&h=400&fit=crop&crop=center"
+      icon: "🥥",
+      bgColor: "bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900 dark:to-orange-900"
     }
   ];
 
@@ -131,13 +137,9 @@ const Food = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {foodItems.map((item, index) => (
               <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 bg-gradient-to-br from-white to-orange-50 dark:from-gray-800 dark:to-orange-900 overflow-hidden border-3 border-orange-200 hover:border-orange-400 transform hover:-rotate-1">
-                <div className="aspect-video overflow-hidden relative">
-                  <img 
-                    src={item.image} 
-                    alt={item.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className={`aspect-video flex items-center justify-center relative ${item.bgColor} transition-all duration-500 group-hover:scale-110`}>
+                  <div className="text-8xl animate-pulse group-hover:animate-bounce">{item.icon}</div>
+                  <Soup className="absolute top-4 right-4 h-8 w-8 text-orange-600 dark:text-orange-400 opacity-50 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
                 <CardHeader className="pb-2">
                   <CardTitle className="text-orange-600 dark:text-orange-400 font-dancing text-2xl group-hover:text-orange-700 transition-colors">

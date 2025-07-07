@@ -1,6 +1,7 @@
+
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Home, UtensilsCrossed, Shirt, FootprintsIcon, Phone } from "lucide-react";
+import { Menu, X, Home, UtensilsCrossed, Shirt, FootprintsIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
@@ -12,7 +13,6 @@ const Navigation = () => {
     { name: "Food", href: "/food", icon: UtensilsCrossed, color: "text-orange-600 hover:text-orange-700" },
     { name: "Fashion", href: "/fashion", icon: Shirt, color: "text-pink-600 hover:text-pink-700" },
     { name: "Footwear", href: "/footwear", icon: FootprintsIcon, color: "text-purple-600 hover:text-purple-700" },
-    { name: "Contact", href: "#contact", icon: Phone, color: "text-green-600 hover:text-green-700" },
   ];
 
   const isActive = (href: string) => {
@@ -37,23 +37,7 @@ const Navigation = () => {
           <div className="flex flex-col md:flex-row md:justify-center space-y-2 md:space-y-0 md:space-x-8 py-4 md:py-3">
             {navItems.map((item) => {
               const IconComponent = item.icon;
-              return item.href.startsWith('#') ? (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className={`flex items-center space-x-2 px-4 py-3 rounded-xl text-sm font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
-                    item.color
-                  } ${
-                    isActive(item.href) 
-                      ? 'bg-gradient-to-r from-pink-100 to-purple-100 dark:from-pink-900 dark:to-purple-900 shadow-lg scale-105' 
-                      : 'hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600'
-                  }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  <IconComponent className="h-5 w-5" />
-                  <span className="font-poppins">{item.name}</span>
-                </a>
-              ) : (
+              return (
                 <Link
                   key={item.name}
                   to={item.href}
@@ -69,7 +53,7 @@ const Navigation = () => {
                   <IconComponent className="h-5 w-5" />
                   <span className="font-poppins">{item.name}</span>
                 </Link>
-              )
+              );
             })}
           </div>
         </div>
