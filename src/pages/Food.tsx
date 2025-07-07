@@ -22,13 +22,13 @@ const Food = () => {
       name: "Okro Soup", 
       price: "₵100 - ₵300", 
       description: "Rich and nutritious okra soup with your choice of fresh meat or fish, cooked to perfection",
-      image: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=500&h=400&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&h=400&fit=crop&crop=center"
     },
     { 
       name: "Egusi Soup", 
       price: "₵150 - ₵400", 
       description: "Traditional melon seed soup with fresh vegetables and premium protein, authentic Nigerian style",
-      image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=500&h=400&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&h=400&fit=crop&crop=center"
     },
     { 
       name: "Vegetable Soup", 
@@ -40,7 +40,7 @@ const Food = () => {
       name: "Afang Soup", 
       price: "₵200 - ₵500", 
       description: "Delicious afang leaves soup with premium seafood and meat, a true delicacy",
-      image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&h=400&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500&h=400&fit=crop&crop=center"
     },
     { 
       name: "Pepper Soup", 
@@ -52,7 +52,7 @@ const Food = () => {
       name: "Banga Soup", 
       price: "₵180 - ₵450", 
       description: "Traditional palm nut soup with assorted meat and fresh fish, cooked with authentic spices",
-      image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=500&h=400&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1574484284002-952d92456975?w=500&h=400&fit=crop&crop=center"
     }
   ];
 

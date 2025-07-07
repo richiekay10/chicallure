@@ -1,7 +1,6 @@
-
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Home, UtensilsCrossed, Shirt, FootprintsIcon, Users, Phone } from "lucide-react";
+import { Menu, X, Home, UtensilsCrossed, Shirt, FootprintsIcon, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
@@ -13,7 +12,6 @@ const Navigation = () => {
     { name: "Food", href: "/food", icon: UtensilsCrossed, color: "text-orange-600 hover:text-orange-700" },
     { name: "Fashion", href: "/fashion", icon: Shirt, color: "text-pink-600 hover:text-pink-700" },
     { name: "Footwear", href: "/footwear", icon: FootprintsIcon, color: "text-purple-600 hover:text-purple-700" },
-    { name: "Gallery", href: "#gallery", icon: Users, color: "text-teal-600 hover:text-teal-700" },
     { name: "Contact", href: "#contact", icon: Phone, color: "text-green-600 hover:text-green-700" },
   ];
 
