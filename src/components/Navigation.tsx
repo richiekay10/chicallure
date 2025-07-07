@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Home, UtensilsCrossed, Shirt, FootprintsIcon, Users, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
@@ -9,12 +9,12 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: "Home", href: "/" },
-    { name: "Food", href: "/food" },
-    { name: "Fashion", href: "/fashion" },
-    { name: "Footwear", href: "/footwear" },
-    { name: "Gallery", href: "#gallery" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/", icon: Home, color: "text-blue-600 hover:text-blue-700" },
+    { name: "Food", href: "/food", icon: UtensilsCrossed, color: "text-orange-600 hover:text-orange-700" },
+    { name: "Fashion", href: "/fashion", icon: Shirt, color: "text-pink-600 hover:text-pink-700" },
+    { name: "Footwear", href: "/footwear", icon: FootprintsIcon, color: "text-purple-600 hover:text-purple-700" },
+    { name: "Gallery", href: "#gallery", icon: Users, color: "text-teal-600 hover:text-teal-700" },
+    { name: "Contact", href: "#contact", icon: Phone, color: "text-green-600 hover:text-green-700" },
   ];
 
   const isActive = (href: string) => {
@@ -23,45 +23,56 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-md border-b border-blue-200 dark:border-gray-700">
+    <nav className="bg-white/95 dark:bg-gray-800/95 backdrop-blur-xl border-b-2 border-gradient-to-r from-pink-200 via-purple-200 to-blue-200 dark:border-gray-600 shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4 md:hidden">
           <Button
             variant="ghost"
             onClick={() => setIsOpen(!isOpen)}
-            className="p-2"
+            className="p-2 hover:bg-gradient-to-r hover:from-pink-100 hover:to-purple-100 dark:hover:from-pink-900 dark:hover:to-purple-900 transition-all duration-300"
           >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {isOpen ? <X className="h-6 w-6 text-purple-600" /> : <Menu className="h-6 w-6 text-purple-600" />}
           </Button>
         </div>
 
-        <div className={`${isOpen ? 'block' : 'hidden'} md:block`}>
-          <div className="flex flex-col md:flex-row md:justify-center space-y-2 md:space-y-0 md:space-x-8 py-4 md:py-2">
-            {navItems.map((item) => (
-              item.href.startsWith('#') ? (
+        <div className={`${isOpen ? 'block' : 'hidden'} md:block transition-all duration-300`}>
+          <div className="flex flex-col md:flex-row md:justify-center space-y-2 md:space-y-0 md:space-x-8 py-4 md:py-3">
+            {navItems.map((item) => {
+              const IconComponent = item.icon;
+              return item.href.startsWith('#') ? (
                 <a
                   key={item.name}
                   href={item.href}
-                  className={`text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 hover:bg-blue-50 dark:hover:bg-gray-700 font-poppins ${
-                    isActive(item.href) ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-gray-700' : ''
+                  className={`flex items-center space-x-2 px-4 py-3 rounded-xl text-sm font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
+                    item.color
+                  } ${
+                    isActive(item.href) 
+                      ? 'bg-gradient-to-r from-pink-100 to-purple-100 dark:from-pink-900 dark:to-purple-900 shadow-lg scale-105' 
+                      : 'hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600'
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
-                  {item.name}
+                  <IconComponent className="h-5 w-5" />
+                  <span className="font-poppins">{item.name}</span>
                 </a>
               ) : (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 hover:bg-blue-50 dark:hover:bg-gray-700 font-poppins ${
-                    isActive(item.href) ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-gray-700' : ''
+                  className={`flex items-center space-x-2 px-4 py-3 rounded-xl text-sm font-bold transition-all duration-300 transform hover:scale-105 hover:shadow-lg ${
+                    item.color
+                  } ${
+                    isActive(item.href) 
+                      ? 'bg-gradient-to-r from-pink-100 to-purple-100 dark:from-pink-900 dark:to-purple-900 shadow-lg scale-105' 
+                      : 'hover:bg-gradient-to-r hover:from-pink-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600'
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
-                  {item.name}
+                  <IconComponent className="h-5 w-5" />
+                  <span className="font-poppins">{item.name}</span>
                 </Link>
               )
-            ))}
+            })}
           </div>
         </div>
       </div>
