@@ -6,7 +6,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import SocialMediaSection from "@/components/SocialMediaSection";
-import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -172,7 +171,6 @@ const Index = () => {
       </section>
 
       <SocialMediaSection />
-      <ContactSection />
 
       {/* WhatsApp Floating Button */}
       <div className="fixed bottom-6 right-6 z-50">
