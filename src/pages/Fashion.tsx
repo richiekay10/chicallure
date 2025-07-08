@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Moon, Sun, MessageCircle, Sparkles, Heart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -22,7 +21,7 @@ const Fashion = () => {
       name: "Bodycon Dresses", 
       price: "₵120 - ₵250", 
       description: "Stunning bodycon dresses that hug your curves perfectly, perfect for any special occasion",
-      image: "https://images.unsplash.com/photo-1596783074918-c84cb06531ca?w=500&h=600&fit=crop&crop=center"
+      image: "https://images.pexels.com/photos/17976480/pexels-photo-17976480/free-photo-of-model-in-a-tank-top-dress-stretching-to-the-rising-sun.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center"
     },
     { 
       name: "Evening Dresses", 
@@ -34,7 +33,7 @@ const Fashion = () => {
       name: "Sexy Dresses", 
       price: "₵80 - ₵180", 
       description: "Alluring and stylish dresses that make a statement, perfect for nights out",
-      image: "https://images.unsplash.com/photo-1571513722275-4b3628d2cd34?w=500&h=600&fit=crop&crop=center"
+      image: "https://images.pexels.com/photos/7148795/pexels-photo-7148795/free-photo-of-grayscale-photo-of-a-sexy-lady-leaning-on-the-wall.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center"
     },
     { 
       name: "Trendy Tops", 
@@ -46,13 +45,13 @@ const Fashion = () => {
       name: "Designer Blouses", 
       price: "₵60 - ₵140", 
       description: "Professional and casual blouses for any occasion, crafted with attention to detail",
-      image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=600&fit=crop&crop=center"
+      image: "https://images.pexels.com/photos/16458459/pexels-photo-16458459/free-photo-of-two-models-wearing-dresses.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center"
     },
     { 
       name: "Chic Crop Tops", 
       price: "₵40 - ₵90", 
       description: "Trendy crop tops for a modern, youthful look that's perfect for any season",
-      image: "https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?w=500&h=600&fit=crop&crop=center"
+      image: "https://images.pexels.com/photos/16150047/pexels-photo-16150047/free-photo-of-woman-standing-near-cactus.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center"
     }
   ];
 
