@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Moon, Sun, MessageCircle, Sparkles, Heart, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -41,18 +40,6 @@ const Footwear = () => {
       price: "₵180 - ₵300", 
       description: "Elegant slippers for comfort and style, perfect for both indoor and outdoor casual wear",
       image: "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=500&h=400&fit=crop&crop=center"
-    },
-    { 
-      name: "Premium Home Slippers", 
-      price: "₵80 - ₵150", 
-      description: "Cozy and comfortable slippers for home use, made with soft, high-quality materials",
-      image: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=500&h=400&fit=crop&crop=center"
-    },
-    { 
-      name: "Beach & Outdoor Slippers", 
-      price: "₵120 - ₵220", 
-      description: "Water-resistant slippers perfect for beach activities and outdoor adventures",
-      image: "https://images.unsplash.com/photo-1521506563983-b7fdf4a2acad?w=500&h=400&fit=crop&crop=center"
     }
   ];
 

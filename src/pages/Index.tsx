@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Moon, Sun, Phone, MessageCircle, Sparkles, Heart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -208,7 +207,7 @@ const Index = () => {
               <span className="font-medium">WhatsApp</span>
             </a>
           </div>
-          <p className="text-sm text-gray-400 mb-2">© 2024 Dume's KnC. All rights reserved.</p>
+          <p className="text-sm text-gray-400 mb-2">© 2025 Dume's KnC. All rights reserved.</p>
           <p className="text-sm text-purple-400 font-medium">
             🚚 Delivery only in Accra • 💳 Payment before delivery • ⭐ Quality Guaranteed
           </p>
