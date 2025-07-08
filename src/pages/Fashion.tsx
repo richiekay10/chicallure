@@ -22,7 +22,7 @@ const Fashion = () => {
       name: "Bodycon Dresses", 
       price: "₵120 - ₵250", 
       description: "Stunning bodycon dresses that hug your curves perfectly, perfect for any special occasion",
-      image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&h=600&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1596783074918-c84cb06531ca?w=500&h=600&fit=crop&crop=center"
     },
     { 
       name: "Evening Dresses", 
@@ -34,19 +34,19 @@ const Fashion = () => {
       name: "Sexy Dresses", 
       price: "₵80 - ₵180", 
       description: "Alluring and stylish dresses that make a statement, perfect for nights out",
-      image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=600&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1571513722275-4b3628d2cd34?w=500&h=600&fit=crop&crop=center"
     },
     { 
       name: "Trendy Tops", 
       price: "₵50 - ₵120", 
       description: "Stylish tops to complete your perfect look, from casual to sophisticated",
-      image: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=500&h=600&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?w=500&h=600&fit=crop&crop=center"
     },
     { 
       name: "Designer Blouses", 
       price: "₵60 - ₵140", 
       description: "Professional and casual blouses for any occasion, crafted with attention to detail",
-      image: "https://images.unsplash.com/photo-1564557287817-3785e038698c?w=500&h=600&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=600&fit=crop&crop=center"
     },
     { 
       name: "Chic Crop Tops", 
