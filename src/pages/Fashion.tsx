@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Moon, Sun, MessageCircle, Sparkles, Heart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -85,9 +84,9 @@ const Fashion = () => {
     },
     { 
       id: "dress-9",
-      name: "Midi Dresses", 
-      price: "₵110 - ₵240", 
-      description: "Versatile midi dresses perfect for both casual and semi-formal occasions",
+      name: "Sexy Dresses", 
+      price: "₵130 - ₵280", 
+      description: "Alluring and confident dresses that showcase your bold style with elegance",
       image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
     },
