@@ -47,7 +47,7 @@ const Fashion = () => {
       name: "Maxi Dresses", 
       price: "₵100 - ₵220", 
       description: "Flowing maxi dresses for comfort and elegance, perfect for any season",
-      image: "https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?w=500&h=600&fit=crop&crop=center",
+      image: "https://images.pexels.com/photos/17243495/pexels-photo-17243495/free-photo-of-a-woman-in-a-crop-top-and-skirt-standing-outside.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
     },
     { 
@@ -71,7 +71,7 @@ const Fashion = () => {
       name: "Formal Dresses", 
       price: "₵200 - ₵400", 
       description: "Sophisticated formal dresses for business events and professional occasions",
-      image: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=500&h=600&fit=crop&crop=center",
+      image: "https://images.pexels.com/photos/28718105/pexels-photo-28718105/free-photo-of-elegant-fashion-portrait-of-two-women-in-lusaka.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
     },
     { 
@@ -79,7 +79,7 @@ const Fashion = () => {
       name: "Party Dresses", 
       price: "₵120 - ₵300", 
       description: "Glamorous party dresses that make you the center of attention",
-      image: "https://images.unsplash.com/photo-1566479179817-b5b8f8e3c5cf?w=500&h=600&fit=crop&crop=center",
+      image: "https://images.pexels.com/photos/29197981/pexels-photo-29197981/free-photo-of-elegant-portrait-of-two-young-women-in-stylish-dresses.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
     },
     { 
@@ -87,7 +87,7 @@ const Fashion = () => {
       name: "Sexy Dresses", 
       price: "₵130 - ₵280", 
       description: "Alluring and confident dresses that showcase your bold style with elegance",
-      image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&h=600&fit=crop&crop=center",
+      image: "https://images.pexels.com/photos/11836796/pexels-photo-11836796/free-photo-of-portrait-of-beautiful-woman-in-sexy-dress.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
     },
     { 
@@ -95,7 +95,7 @@ const Fashion = () => {
       name: "Mini Dresses", 
       price: "₵85 - ₵190", 
       description: "Trendy mini dresses that showcase your style with confidence and flair",
-      image: "https://images.unsplash.com/photo-1583844403303-5bb5e8ee4105?w=500&h=600&fit=crop&crop=center",
+      image: "https://images.pexels.com/photos/22763552/pexels-photo-22763552/free-photo-of-brunette-in-mini.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
     },
     { 
