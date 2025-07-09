@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Moon, Sun, MessageCircle, Sparkles, Heart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -25,33 +26,51 @@ const Fashion = () => {
     },
     { 
       name: "Evening Dresses", 
-      price: "₵150 - ₵300", 
+      price: "₵180 - ₵350", 
       description: "Elegant evening dresses for special occasions, designed to make you shine bright",
       image: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=500&h=600&fit=crop&crop=center"
     },
     { 
-      name: "Sexy Dresses", 
-      price: "₵80 - ₵180", 
-      description: "Alluring and stylish dresses that make a statement, perfect for nights out",
+      name: "Cocktail Dresses", 
+      price: "₵150 - ₵280", 
+      description: "Sophisticated cocktail dresses perfect for parties and elegant gatherings",
       image: "https://images.pexels.com/photos/7148795/pexels-photo-7148795/free-photo-of-grayscale-photo-of-a-sexy-lady-leaning-on-the-wall.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center"
     },
     { 
-      name: "Trendy Tops", 
-      price: "₵50 - ₵120", 
-      description: "Stylish tops to complete your perfect look, from casual to sophisticated",
+      name: "Maxi Dresses", 
+      price: "₵100 - ₵220", 
+      description: "Flowing maxi dresses for comfort and elegance, perfect for any season",
       image: "https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?w=500&h=600&fit=crop&crop=center"
     },
     { 
-      name: "Designer Blouses", 
-      price: "₵60 - ₵140", 
-      description: "Professional and casual blouses for any occasion, crafted with attention to detail",
+      name: "Summer Dresses", 
+      price: "₵80 - ₵180", 
+      description: "Light and breezy summer dresses that keep you cool and stylish",
       image: "https://images.pexels.com/photos/16458459/pexels-photo-16458459/free-photo-of-two-models-wearing-dresses.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center"
     },
     { 
-      name: "Chic Crop Tops", 
-      price: "₵40 - ₵90", 
-      description: "Trendy crop tops for a modern, youthful look that's perfect for any season",
+      name: "A-Line Dresses", 
+      price: "₵90 - ₵200", 
+      description: "Classic A-line dresses that flatter every figure with timeless elegance",
       image: "https://images.pexels.com/photos/16150047/pexels-photo-16150047/free-photo-of-woman-standing-near-cactus.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center"
+    },
+    { 
+      name: "Formal Dresses", 
+      price: "₵200 - ₵400", 
+      description: "Sophisticated formal dresses for business events and professional occasions",
+      image: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=500&h=600&fit=crop&crop=center"
+    },
+    { 
+      name: "Party Dresses", 
+      price: "₵120 - ₵300", 
+      description: "Glamorous party dresses that make you the center of attention",
+      image: "https://images.unsplash.com/photo-1566479179817-b5b8f8e3c5cf?w=500&h=600&fit=crop&crop=center"
+    },
+    { 
+      name: "Midi Dresses", 
+      price: "₵110 - ₵240", 
+      description: "Versatile midi dresses perfect for both casual and semi-formal occasions",
+      image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&h=600&fit=crop&crop=center"
     }
   ];
 
@@ -71,13 +90,13 @@ const Fashion = () => {
           <div className="flex items-center space-x-3">
             <div className="relative">
               <div className="w-12 h-12 bg-gradient-to-r from-pink-500 via-purple-500 to-rose-500 rounded-full flex items-center justify-center shadow-lg animate-pulse">
-                <span className="text-white font-bold text-xl font-dancing">D</span>
+                <span className="text-white font-bold text-xl font-dancing">C</span>
               </div>
               <Star className="absolute -top-1 -right-1 h-4 w-4 text-pink-400 animate-spin" />
             </div>
             <div>
               <h1 className="text-2xl font-bold font-dancing bg-gradient-to-r from-pink-600 via-purple-600 to-rose-600 bg-clip-text text-transparent">
-                Dume's KnC
+                ChicAllure
               </h1>
               <p className="text-xs text-pink-600 font-medium">👗 Fashion Studio</p>
             </div>
@@ -118,10 +137,10 @@ const Fashion = () => {
           </div>
           
           <h2 className="text-6xl font-bold mb-8 font-dancing bg-gradient-to-r from-pink-600 via-purple-600 to-rose-600 bg-clip-text text-transparent animate-fade-in drop-shadow-lg">
-            👗 Fashion & Style
+            👗 Dress Collection
           </h2>
           <p className="text-xl text-gray-700 dark:text-gray-200 mb-12 max-w-3xl mx-auto font-medium leading-relaxed">
-            Discover our stunning collection of dresses and trendy tops that make you look and feel absolutely amazing! 
+            Discover our stunning collection of dresses for every occasion, from elegant evening gowns to casual summer dresses. 
             Express your unique style with confidence! 💃✨
           </p>
         </div>

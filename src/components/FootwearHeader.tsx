@@ -16,15 +16,15 @@ const FootwearHeader = ({ darkMode, toggleDarkMode, openWhatsApp }: FootwearHead
         <div className="flex items-center space-x-3">
           <div className="relative">
             <div className="w-12 h-12 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-full flex items-center justify-center shadow-lg animate-pulse">
-              <span className="text-white font-bold text-xl font-dancing">D</span>
+              <span className="text-white font-bold text-xl font-dancing">C</span>
             </div>
             <Zap className="absolute -top-1 -right-1 h-4 w-4 text-yellow-400 animate-bounce" />
           </div>
           <div>
             <h1 className="text-2xl font-bold font-dancing bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-              Dume's KnC
+              ChicAllure
             </h1>
-            <p className="text-xs text-blue-600 font-medium">👟 Footwear Collection</p>
+            <p className="text-xs text-blue-600 font-medium">👠 Footwear Collection</p>
           </div>
         </div>
         

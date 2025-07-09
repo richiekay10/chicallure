@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Home, UtensilsCrossed, Shirt, FootprintsIcon } from "lucide-react";
+import { Menu, X, Home, Shirt, FootprintsIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
@@ -9,10 +9,9 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: "Home", href: "/", icon: Home, color: "text-blue-600 hover:text-blue-700" },
-    { name: "Food", href: "/food", icon: UtensilsCrossed, color: "text-orange-600 hover:text-orange-700" },
+    { name: "Home", href: "/", icon: Home, color: "text-purple-600 hover:text-purple-700" },
     { name: "Fashion", href: "/fashion", icon: Shirt, color: "text-pink-600 hover:text-pink-700" },
-    { name: "Footwear", href: "/footwear", icon: FootprintsIcon, color: "text-purple-600 hover:text-purple-700" },
+    { name: "Footwear", href: "/footwear", icon: FootprintsIcon, color: "text-blue-600 hover:text-blue-700" },
   ];
 
   const isActive = (href: string) => {
@@ -21,7 +20,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-white/95 dark:bg-gray-800/95 backdrop-blur-xl border-b-2 border-gradient-to-r from-pink-200 via-purple-200 to-blue-200 dark:border-gray-600 shadow-lg">
+    <nav className="bg-white/95 dark:bg-gray-800/95 backdrop-blur-xl border-b-2 border-gradient-to-r from-pink-200 via-purple-200 to-rose-200 dark:border-gray-600 shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4 md:hidden">
           <Button
