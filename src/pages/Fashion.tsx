@@ -2,8 +2,9 @@
 import { useState } from "react";
 import { Moon, Sun, MessageCircle, Sparkles, Heart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
+import ProductCard from "@/components/ProductCard";
+import FloatingCart from "@/components/FloatingCart";
 
 const Fashion = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -19,58 +20,100 @@ const Fashion = () => {
 
   const fashionItems = [
     { 
+      id: "dress-1",
       name: "Bodycon Dresses", 
       price: "₵120 - ₵250", 
       description: "Stunning bodycon dresses that hug your curves perfectly, perfect for any special occasion",
-      image: "https://images.pexels.com/photos/17976480/pexels-photo-17976480/free-photo-of-model-in-a-tank-top-dress-stretching-to-the-rising-sun.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center"
+      image: "https://images.pexels.com/photos/17976480/pexels-photo-17976480/free-photo-of-model-in-a-tank-top-dress-stretching-to-the-rising-sun.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
+      category: "dress" as const
     },
     { 
+      id: "dress-2",
       name: "Evening Dresses", 
       price: "₵180 - ₵350", 
       description: "Elegant evening dresses for special occasions, designed to make you shine bright",
-      image: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=500&h=600&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=500&h=600&fit=crop&crop=center",
+      category: "dress" as const
     },
     { 
+      id: "dress-3",
       name: "Cocktail Dresses", 
       price: "₵150 - ₵280", 
       description: "Sophisticated cocktail dresses perfect for parties and elegant gatherings",
-      image: "https://images.pexels.com/photos/7148795/pexels-photo-7148795/free-photo-of-grayscale-photo-of-a-sexy-lady-leaning-on-the-wall.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center"
+      image: "https://images.pexels.com/photos/7148795/pexels-photo-7148795/free-photo-of-grayscale-photo-of-a-sexy-lady-leaning-on-the-wall.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
+      category: "dress" as const
     },
     { 
+      id: "dress-4",
       name: "Maxi Dresses", 
       price: "₵100 - ₵220", 
       description: "Flowing maxi dresses for comfort and elegance, perfect for any season",
-      image: "https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?w=500&h=600&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1618932260643-eee4a2f652a6?w=500&h=600&fit=crop&crop=center",
+      category: "dress" as const
     },
     { 
+      id: "dress-5",
       name: "Summer Dresses", 
       price: "₵80 - ₵180", 
       description: "Light and breezy summer dresses that keep you cool and stylish",
-      image: "https://images.pexels.com/photos/16458459/pexels-photo-16458459/free-photo-of-two-models-wearing-dresses.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center"
+      image: "https://images.pexels.com/photos/16458459/pexels-photo-16458459/free-photo-of-two-models-wearing-dresses.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
+      category: "dress" as const
     },
     { 
+      id: "dress-6",
       name: "A-Line Dresses", 
       price: "₵90 - ₵200", 
       description: "Classic A-line dresses that flatter every figure with timeless elegance",
-      image: "https://images.pexels.com/photos/16150047/pexels-photo-16150047/free-photo-of-woman-standing-near-cactus.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center"
+      image: "https://images.pexels.com/photos/16150047/pexels-photo-16150047/free-photo-of-woman-standing-near-cactus.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
+      category: "dress" as const
     },
     { 
+      id: "dress-7",
       name: "Formal Dresses", 
       price: "₵200 - ₵400", 
       description: "Sophisticated formal dresses for business events and professional occasions",
-      image: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=500&h=600&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=500&h=600&fit=crop&crop=center",
+      category: "dress" as const
     },
     { 
+      id: "dress-8",
       name: "Party Dresses", 
       price: "₵120 - ₵300", 
       description: "Glamorous party dresses that make you the center of attention",
-      image: "https://images.unsplash.com/photo-1566479179817-b5b8f8e3c5cf?w=500&h=600&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1566479179817-b5b8f8e3c5cf?w=500&h=600&fit=crop&crop=center",
+      category: "dress" as const
     },
     { 
+      id: "dress-9",
       name: "Midi Dresses", 
       price: "₵110 - ₵240", 
       description: "Versatile midi dresses perfect for both casual and semi-formal occasions",
-      image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&h=600&fit=crop&crop=center"
+      image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&h=600&fit=crop&crop=center",
+      category: "dress" as const
+    },
+    { 
+      id: "dress-10",
+      name: "Mini Dresses", 
+      price: "₵85 - ₵190", 
+      description: "Trendy mini dresses that showcase your style with confidence and flair",
+      image: "https://images.unsplash.com/photo-1583844403303-5bb5e8ee4105?w=500&h=600&fit=crop&crop=center",
+      category: "dress" as const
+    },
+    { 
+      id: "dress-11",
+      name: "Wrap Dresses", 
+      price: "₵95 - ₵210", 
+      description: "Flattering wrap dresses that accentuate your waist beautifully",
+      image: "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=500&h=600&fit=crop&crop=center",
+      category: "dress" as const
+    },
+    { 
+      id: "dress-12",
+      name: "Off-Shoulder Dresses", 
+      price: "₵130 - ₵260", 
+      description: "Romantic off-shoulder dresses that highlight your shoulders elegantly",
+      image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=500&h=600&fit=crop&crop=center",
+      category: "dress" as const
     }
   ];
 
@@ -149,53 +192,22 @@ const Fashion = () => {
       {/* Fashion Items Grid */}
       <section className="py-16 px-4">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {fashionItems.map((item, index) => (
-              <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:scale-105 bg-gradient-to-br from-white to-pink-50 dark:from-gray-800 dark:to-pink-900 overflow-hidden border-3 border-pink-200 hover:border-pink-400 transform hover:rotate-1">
-                <div className="aspect-[3/4] overflow-hidden relative">
-                  <img 
-                    src={item.image} 
-                    alt={item.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-pink-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <div className="absolute top-2 right-2 bg-pink-500 text-white px-2 py-1 rounded-full text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    New ✨
-                  </div>
-                </div>
-                <CardHeader className="pb-2">
-                  <CardTitle className="text-pink-600 dark:text-pink-400 font-dancing text-2xl group-hover:text-pink-700 transition-colors">
-                    {item.name}
-                  </CardTitle>
-                  <CardDescription className="text-lg font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                    {item.price}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">{item.description}</p>
-                  <Button 
-                    onClick={openWhatsApp}
-                    className="w-full bg-gradient-to-r from-pink-500 via-purple-500 to-rose-500 hover:from-pink-600 hover:via-purple-600 hover:to-rose-600 text-white font-bold py-3 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-                  >
-                    💖 Get This Look Now
-                  </Button>
-                </CardContent>
-              </Card>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            {fashionItems.map((item) => (
+              <ProductCard 
+                key={item.id} 
+                item={item} 
+                onWhatsAppClick={openWhatsApp}
+                gradientFrom="from-pink-500"
+                gradientTo="to-rose-500"
+                accentColor="text-pink-600"
+              />
             ))}
           </div>
         </div>
       </section>
 
-      {/* WhatsApp Floating Button */}
-      <div className="fixed bottom-6 right-6 z-50">
-        <Button
-          onClick={openWhatsApp}
-          size="lg"
-          className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white rounded-full p-4 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-125 animate-bounce"
-        >
-          <MessageCircle className="h-8 w-8" />
-        </Button>
-      </div>
+      <FloatingCart />
     </div>
   );
 };
