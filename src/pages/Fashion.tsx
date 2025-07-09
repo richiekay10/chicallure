@@ -1,8 +1,9 @@
+
 import { useState } from "react";
-import { Moon, Sun, MessageCircle, Sparkles, Heart, Star } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
-import ProductCard from "@/components/ProductCard";
+import FashionHeader from "@/components/FashionHeader";
+import FashionHero from "@/components/FashionHero";
+import FashionItemsGrid from "@/components/FashionItemsGrid";
 import FloatingCart from "@/components/FloatingCart";
 
 const Fashion = () => {
@@ -126,85 +127,17 @@ const Fashion = () => {
         <div className="absolute top-1/2 right-1/3 w-8 h-8 bg-gradient-to-r from-pink-300 to-rose-300 rounded-full opacity-40 animate-bounce" style={{animationDelay: '3s'}}></div>
       </div>
 
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl border-b-3 border-pink-300 shadow-xl">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center space-x-3">
-            <div className="relative">
-              <div className="w-12 h-12 bg-gradient-to-r from-pink-500 via-purple-500 to-rose-500 rounded-full flex items-center justify-center shadow-lg animate-pulse">
-                <span className="text-white font-bold text-xl font-dancing">C</span>
-              </div>
-              <Star className="absolute -top-1 -right-1 h-4 w-4 text-pink-400 animate-spin" />
-            </div>
-            <div>
-              <h1 className="text-2xl font-bold font-dancing bg-gradient-to-r from-pink-600 via-purple-600 to-rose-600 bg-clip-text text-transparent">
-                ChicAllure
-              </h1>
-              <p className="text-xs text-pink-600 font-medium">👗 Fashion Studio</p>
-            </div>
-          </div>
-          
-          <div className="flex items-center space-x-3">
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={toggleDarkMode}
-              className="p-2 border-2 border-pink-300 hover:bg-pink-100 dark:border-pink-600 dark:hover:bg-pink-800"
-            >
-              {darkMode ? <Sun className="h-4 w-4 text-yellow-400" /> : <Moon className="h-4 w-4 text-pink-600" />}
-            </Button>
-            
-            <Button
-              onClick={openWhatsApp}
-              className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white flex items-center space-x-2 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-            >
-              <MessageCircle className="h-4 w-4" />
-              <span className="hidden sm:inline">Shop Now</span>
-            </Button>
-          </div>
-        </div>
-      </header>
+      <FashionHeader 
+        darkMode={darkMode} 
+        onToggleDarkMode={toggleDarkMode} 
+        onWhatsAppClick={openWhatsApp} 
+      />
 
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="py-20 px-4 relative">
-        <div className="container mx-auto text-center relative z-10">
-          <div className="flex justify-center items-center space-x-3 mb-6">
-            <span className="text-5xl animate-bounce">👗</span>
-            <Heart className="h-8 w-8 text-pink-500 animate-pulse" />
-            <span className="text-5xl animate-bounce" style={{animationDelay: '0.5s'}}>💄</span>
-            <Sparkles className="h-8 w-8 text-purple-500 animate-spin" />
-            <span className="text-5xl animate-bounce" style={{animationDelay: '1s'}}>✨</span>
-          </div>
-          
-          <h2 className="text-6xl font-bold mb-8 font-dancing bg-gradient-to-r from-pink-600 via-purple-600 to-rose-600 bg-clip-text text-transparent animate-fade-in drop-shadow-lg">
-            👗 Dress Collection
-          </h2>
-          <p className="text-xl text-gray-700 dark:text-gray-200 mb-12 max-w-3xl mx-auto font-medium leading-relaxed">
-            Discover our stunning collection of dresses for every occasion, from elegant evening gowns to casual summer dresses. 
-            Express your unique style with confidence! 💃✨
-          </p>
-        </div>
-      </section>
+      <FashionHero />
 
-      {/* Fashion Items Grid */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {fashionItems.map((item) => (
-              <ProductCard 
-                key={item.id} 
-                item={item} 
-                onWhatsAppClick={openWhatsApp}
-                gradientFrom="from-pink-500"
-                gradientTo="to-rose-500"
-                accentColor="text-pink-600"
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+      <FashionItemsGrid items={fashionItems} onWhatsAppClick={openWhatsApp} />
 
       <FloatingCart />
     </div>
