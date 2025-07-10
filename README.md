@@ -1,4 +1,4 @@
-# Welcome to your Lovable project :https://dknc.netlify.app/
+# Welcome to your Lovable project :https://chicallure.netlify.app/
 
 ## Project info
 
