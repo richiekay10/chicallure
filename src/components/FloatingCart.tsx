@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ShoppingCart, X, Plus, Minus, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -25,7 +24,7 @@ const FloatingCart = () => {
     message += "Please let me know about availability and total cost. Thank you!";
 
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/233549132622?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/233556789624?text=${encodedMessage}`, '_blank');
     
     // Clear cart after sending
     clearCart();
