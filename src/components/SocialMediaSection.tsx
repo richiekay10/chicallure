@@ -1,5 +1,5 @@
 
-import { Instagram, Facebook, Youtube, ExternalLink } from "lucide-react";
+import { Instagram, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -7,19 +7,11 @@ const SocialMediaSection = () => {
   const socialLinks = [
     {
       name: "Instagram",
-      url: "https://instagram.com/chicallure",
+      url: "https://www.instagram.com/chic_allure.gh?igsh=OGh4N2p5ZDRha2Ny",
       icon: Instagram,
       description: "Follow us for daily fashion inspiration",
       color: "from-pink-500 to-purple-500",
       hoverColor: "hover:from-pink-600 hover:to-purple-600"
-    },
-    {
-      name: "Facebook",
-      url: "https://facebook.com/chicallure",
-      icon: Facebook,
-      description: "Join our fashion community",
-      color: "from-blue-500 to-blue-600",
-      hoverColor: "hover:from-blue-600 hover:to-blue-700"
     },
     {
       name: "Snapchat",
@@ -28,14 +20,6 @@ const SocialMediaSection = () => {
       description: "See our latest collections",
       color: "from-yellow-400 to-yellow-500",
       hoverColor: "hover:from-yellow-500 hover:to-yellow-600"
-    },
-    {
-      name: "YouTube",
-      url: "https://youtube.com/chicallure",
-      icon: Youtube,
-      description: "Fashion tutorials and styling tips",
-      color: "from-red-500 to-red-600",
-      hoverColor: "hover:from-red-600 hover:to-red-700"
     }
   ];
 
@@ -51,7 +35,7 @@ const SocialMediaSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
           {socialLinks.map((social) => {
             const IconComponent = social.icon;
             return (

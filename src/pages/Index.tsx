@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Moon, Sun, Phone, MessageCircle, Sparkles, Heart, Star } from "lucide-react";
+import { Moon, Sun, Phone, MessageCircle, Sparkles, Heart, Star, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -151,21 +151,25 @@ const Index = () => {
             </h3>
           </div>
           <p className="text-gray-300 mb-6 text-lg font-medium">
-            🌟 Serving Accra with premium fashion and elegant style 🌟
+            🌟 Serving Ghana with premium fashion and elegant style 🌟
           </p>
           <div className="flex justify-center space-x-8 mb-6">
-            <a href="tel:0505818513" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors group">
+            <a href="tel:+233556789624" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors group">
               <Phone className="h-5 w-5 group-hover:animate-bounce" />
-              <span className="font-medium">0505818513</span>
+              <span className="font-medium">+233556789624</span>
             </a>
             <a href="https://wa.me/233556789624" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors group">
               <MessageCircle className="h-5 w-5 group-hover:animate-bounce" />
               <span className="font-medium">WhatsApp</span>
             </a>
+            <div className="flex items-center space-x-2 text-gray-300">
+              <MapPin className="h-5 w-5" />
+              <span className="font-medium">Ablekuma, Vicolis junction</span>
+            </div>
           </div>
           <p className="text-sm text-gray-400 mb-2">© 2025 ChicAllure. All rights reserved.</p>
           <p className="text-sm text-purple-400 font-medium">
-            🚚 Delivery only in Accra • 💳 Payment before delivery • ⭐ Quality Guaranteed
+            🚚 Delivery nationwide • 💳 Payment before delivery • ⭐ Quality Guaranteed
           </p>
         </div>
       </footer>
