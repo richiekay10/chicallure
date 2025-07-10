@@ -15,14 +15,14 @@ const Fashion = () => {
   };
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/233549132622', '_blank');
+    window.open('https://wa.me/233556789624', '_blank');
   };
 
   const fashionItems = [
     { 
       id: "dress-1",
       name: "Bodycon Dresses", 
-      price: "₵120 - ₵250", 
+      price: "₵50 - ₵120", 
       description: "Stunning bodycon dresses that hug your curves perfectly, perfect for any special occasion",
       image: "https://images.pexels.com/photos/17976480/pexels-photo-17976480/free-photo-of-model-in-a-tank-top-dress-stretching-to-the-rising-sun.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
@@ -30,7 +30,7 @@ const Fashion = () => {
     { 
       id: "dress-2",
       name: "Evening Dresses", 
-      price: "₵180 - ₵350", 
+      price: "₵120 - ₵180", 
       description: "Elegant evening dresses for special occasions, designed to make you shine bright",
       image: "https://images.unsplash.com/photo-1539008835657-9e8e9680c956?w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
@@ -38,7 +38,7 @@ const Fashion = () => {
     { 
       id: "dress-3",
       name: "Cocktail Dresses", 
-      price: "₵150 - ₵280", 
+      price: "₵80 - ₵150", 
       description: "Sophisticated cocktail dresses perfect for parties and elegant gatherings",
       image: "https://images.pexels.com/photos/7148795/pexels-photo-7148795/free-photo-of-grayscale-photo-of-a-sexy-lady-leaning-on-the-wall.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
@@ -46,7 +46,7 @@ const Fashion = () => {
     { 
       id: "dress-4",
       name: "Maxi Dresses", 
-      price: "₵100 - ₵220", 
+      price: "₵60 - ₵140", 
       description: "Flowing maxi dresses for comfort and elegance, perfect for any season",
       image: "https://images.pexels.com/photos/17243495/pexels-photo-17243495/free-photo-of-a-woman-in-a-crop-top-and-skirt-standing-outside.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
@@ -54,7 +54,7 @@ const Fashion = () => {
     { 
       id: "dress-5",
       name: "Summer Dresses", 
-      price: "₵80 - ₵180", 
+      price: "₵50 - ₵110", 
       description: "Light and breezy summer dresses that keep you cool and stylish",
       image: "https://images.pexels.com/photos/16458459/pexels-photo-16458459/free-photo-of-two-models-wearing-dresses.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
@@ -62,7 +62,7 @@ const Fashion = () => {
     { 
       id: "dress-6",
       name: "A-Line Dresses", 
-      price: "₵90 - ₵200", 
+      price: "₵55 - ₵130", 
       description: "Classic A-line dresses that flatter every figure with timeless elegance",
       image: "https://images.pexels.com/photos/16150047/pexels-photo-16150047/free-photo-of-woman-standing-near-cactus.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
@@ -70,7 +70,7 @@ const Fashion = () => {
     { 
       id: "dress-7",
       name: "Formal Dresses", 
-      price: "₵200 - ₵400", 
+      price: "₵100 - ₵180", 
       description: "Sophisticated formal dresses for business events and professional occasions",
       image: "https://images.pexels.com/photos/28718105/pexels-photo-28718105/free-photo-of-elegant-fashion-portrait-of-two-women-in-lusaka.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
@@ -78,7 +78,7 @@ const Fashion = () => {
     { 
       id: "dress-8",
       name: "Party Dresses", 
-      price: "₵120 - ₵300", 
+      price: "₵70 - ₵160", 
       description: "Glamorous party dresses that make you the center of attention",
       image: "https://images.pexels.com/photos/29197981/pexels-photo-29197981/free-photo-of-elegant-portrait-of-two-young-women-in-stylish-dresses.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
@@ -86,7 +86,7 @@ const Fashion = () => {
     { 
       id: "dress-9",
       name: "Sexy Dresses", 
-      price: "₵130 - ₵280", 
+      price: "₵75 - ₵155", 
       description: "Alluring and confident dresses that showcase your bold style with elegance",
       image: "https://images.pexels.com/photos/11836796/pexels-photo-11836796/free-photo-of-portrait-of-beautiful-woman-in-sexy-dress.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
@@ -94,7 +94,7 @@ const Fashion = () => {
     { 
       id: "dress-10",
       name: "Mini Dresses", 
-      price: "₵85 - ₵190", 
+      price: "₵55 - ₵125", 
       description: "Trendy mini dresses that showcase your style with confidence and flair",
       image: "https://images.pexels.com/photos/22763552/pexels-photo-22763552/free-photo-of-brunette-in-mini.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
@@ -102,7 +102,7 @@ const Fashion = () => {
     { 
       id: "dress-11",
       name: "Wrap Dresses", 
-      price: "₵95 - ₵210", 
+      price: "₵65 - ₵135", 
       description: "Flattering wrap dresses that accentuate your waist beautifully",
       image: "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=500&h=600&fit=crop&crop=center",
       category: "dress" as const
@@ -110,7 +110,7 @@ const Fashion = () => {
     { 
       id: "dress-12",
       name: "Off-Shoulder Dresses", 
-      price: "₵130 - ₵260", 
+      price: "₵80 - ₵170", 
       description: "Romantic off-shoulder dresses that highlight your shoulders elegantly",
       image: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=500&h=600&fit=crop&crop=center",
       category: "dress" as const

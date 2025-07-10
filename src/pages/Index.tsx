@@ -16,7 +16,7 @@ const Index = () => {
   };
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/233549132622', '_blank');
+    window.open('https://wa.me/233556789624', '_blank');
   };
 
   return (
@@ -84,51 +84,28 @@ const Index = () => {
           </h2>
           
           <p className="text-2xl text-gray-700 dark:text-gray-200 mb-12 max-w-3xl mx-auto animate-fade-in font-medium leading-relaxed">
-            🌟 Your ultimate destination for <span className="text-pink-600 font-bold">elegant dresses</span>, 
-            <span className="text-purple-600 font-bold"> stunning fashion</span>, and 
-            <span className="text-rose-600 font-bold"> premium footwear</span> in Accra! ✨
+            🌟 Your ultimate destination for <span className="text-pink-600 font-bold">elegant dresses</span> and 
+            <span className="text-purple-600 font-bold"> stunning fashion</span> in Accra! ✨
           </p>
           
-          <div className="grid md:grid-cols-2 gap-8 mt-16">
+          <div className="grid md:grid-cols-1 gap-8 mt-16 max-w-2xl mx-auto">
             <Link to="/fashion" className="group">
               <Card className="hover:shadow-2xl transition-all duration-500 hover:scale-110 bg-gradient-to-br from-pink-100 to-purple-100 dark:from-pink-900 dark:to-purple-900 cursor-pointer border-3 border-pink-200 hover:border-pink-400 transform hover:-rotate-1">
                 <CardHeader className="text-center pb-2">
-                  <div className="text-6xl mb-4 group-hover:animate-bounce">👗</div>
-                  <CardTitle className="text-pink-600 dark:text-pink-400 font-dancing text-3xl group-hover:text-pink-700">
-                    Elegant Dresses Collection
+                  <div className="text-8xl mb-6 group-hover:animate-bounce">👗</div>
+                  <CardTitle className="text-pink-600 dark:text-pink-400 font-dancing text-4xl group-hover:text-pink-700">
+                    Premium Dress Collection
                   </CardTitle>
-                  <CardDescription className="text-lg font-medium text-pink-700 dark:text-pink-300">
-                    Stunning dresses for every occasion
+                  <CardDescription className="text-xl font-medium text-pink-700 dark:text-pink-300">
+                    Elegant dresses for every occasion
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-3 leading-relaxed">
+                  <p className="text-base text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
                     Discover our exquisite collection of bodycon, evening, and designer dresses that make you shine! 💃
                   </p>
-                  <div className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-4 py-2 rounded-full font-bold text-lg shadow-lg">
-                    ₵50 - ₵300
-                  </div>
-                </CardContent>
-              </Card>
-            </Link>
-
-            <Link to="/footwear" className="group">
-              <Card className="hover:shadow-2xl transition-all duration-500 hover:scale-110 bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900 dark:to-purple-900 cursor-pointer border-3 border-blue-200 hover:border-blue-400 transform hover:rotate-1">
-                <CardHeader className="text-center pb-2">
-                  <div className="text-6xl mb-4 group-hover:animate-bounce">👠</div>
-                  <CardTitle className="text-blue-600 dark:text-blue-400 font-dancing text-3xl group-hover:text-blue-700">
-                    Premium Footwear
-                  </CardTitle>
-                  <CardDescription className="text-lg font-medium text-blue-700 dark:text-blue-300">
-                    Elegant heels & comfortable shoes
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-3 leading-relaxed">
-                    Complete your look with our sophisticated collection of heels, sneakers, and elegant footwear! 👠
-                  </p>
-                  <div className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-full font-bold text-lg shadow-lg">
-                    ₵180 - ₵450
+                  <div className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-3 rounded-full font-bold text-xl shadow-lg">
+                    ₵50 - ₵180
                   </div>
                 </CardContent>
               </Card>
@@ -181,7 +158,7 @@ const Index = () => {
               <Phone className="h-5 w-5 group-hover:animate-bounce" />
               <span className="font-medium">0505818513</span>
             </a>
-            <a href="https://wa.me/233549132622" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors group">
+            <a href="https://wa.me/233556789624" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors group">
               <MessageCircle className="h-5 w-5 group-hover:animate-bounce" />
               <span className="font-medium">WhatsApp</span>
             </a>
